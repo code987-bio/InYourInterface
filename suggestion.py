@@ -35,6 +35,12 @@ def main():
   print("---------------")
   for person in classmates:
     print(person)
+    
+  #Check if the object classmates has the __len__ mehtod
+  if hasattr(classmates, '__len__'):
+    print("Classmates has the len method")
+  else:
+    print("Classmates does not have len method")
 
 main()
 
